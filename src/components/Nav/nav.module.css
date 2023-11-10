@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #33333300; 
+  }
+  
+  .nav button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    background-color: #ff9800; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-inline-end: 90px;
+  }
+  
+  .nav button:hover {
+    background-color: #ff5722;
+    
+  }
+  
+  .nav span {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-inline-end: 90px;
+  }
+  
+  .nav span:hover {
+    color: #a200ff; 
+    
+  }
+  

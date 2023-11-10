@@ -1,0 +1,68 @@
+.form {
+  max-inline-size: 600px;
+  margin: 0 auto;
+  padding: 200px;
+  background-color: rgba(0, 0, 0, 0); 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-block-end: 10px;
+  color: #fff;
+}
+
+input {
+  padding: 15px;
+  margin-block-end: 30px;
+  font-size: 1.3rem;
+  border: -1px solid #ccc;
+  border-radius: 9px;
+  background-color: #333;
+  color: #fff; 
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-image: url('https://th.bing.com/th/id/R.4a9baabb4d6996bc6368f286f67b1a75?rik=hz3sPKi9uTkZ2w&riu=http%3a%2f%2fprincesitairene.webcindario.com%2fImagen-animada-Estrella-fugaz-03.gif&ehk=Olb2MS96dH2X3mpBKgV8E0GyFXCRl2HwI0Tc5goN2kI%3d&risl=&pid=ImgRaw&r=0');
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5622c1; 
+}
+
+span {
+  color: #ff0000ce;
+  margin-block-end: 10px;
+}
+.form::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  opacity: 0.;
+  z-index: -1;
+  background-image: url('https://images5.alphacoders.com/876/876590.png');
+}
+
+label,
+input,
+button,
+span {
+  font-family: 'Comic Sans MS', ; 
+}

@@ -1,0 +1,29 @@
+.detail {
+  inline-size: calc(80%); 
+  block-size: calc(80% - 20px); 
+  padding: 30px;
+  border: 3px solid rgba(0, 128, 0, 0.61);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.753);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.653);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.detail h2 {
+  font-size: 1.5em;
+  margin-block-end: 1px;
+}
+
+.detail h4 {
+  font-size: 0.9em;
+  margin-block-end: 1px;
+}
+
+.detail img {
+  max-inline-size: 54%; 
+  block-size:unset;
+  margin: 0 auto; 
+  border-radius: 80px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,15 @@
+
+.isActive {
+  color: #007bff; /* Color del texto cuando el enlace está activo */
+  font-weight: bold; /* Texto en negrita cuando el enlace está activo */
+}
+
+.unActive {
+  color: #333; /* Color del texto cuando el enlace no está activo */
+  transition: color 0.3s ease; /* Transición suave del color del texto */
+}
+
+.unActive:hover {
+  color: #007bff; /* Cambia el color del texto cuando el enlace no está activo al pasar el mouse */
+  text-decoration: none; /* Elimina el subrayado cuando el enlace no está activo */
+}

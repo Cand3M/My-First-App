@@ -1,0 +1,42 @@
+.About {
+  max-inline-size: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff8a; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(247, 247, 247, 0.63);
+  text-align: center;
+}
+
+.About h2 {
+  font-size: 2rem;
+  margin-block-end: 20px;
+  color: #ffffff; 
+  font-family: 'Comic Sans MS', cursive; 
+}
+
+.About h3 {
+  font-size: 1.3rem;
+  margin-block-end: 20px;
+  color: #FFD700; 
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.About a {
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.About a:hover {
+  text-decoration: underline;
+}
+
+.About img {
+  inline-size: 200px;
+  block-size: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-block-end: 20px;
+}
