@@ -24,31 +24,40 @@ function App() {
       !access && navigate('/')
    },[access])
 
-   function onSearch(id){
-      if(!id) alert('Ingresa por favor un ID')
-      if(characters.find(char => char.id === parseInt(id))) return alert (`Ya existe el personaje con ese id ${id}`)
-
-      axios(`https://rym2.up.railway.app/api/character/${id}?key=pi-cand3m`)
-      .then(({data})=>{
-         
-         if(data.name){
-            setCharacters(oldChars => [...oldChars,data])
-         }
-         else {
-           alert( 'No hay personajes con ese ID')
-         }
-      })
-      .catch(err => console.log(err))
-   }
+   async function onSearch(id) {
+      try {
+          if (!id) alert('Ingresa por favor un ID');
+          if (characters.find(char => char.id === parseInt(id))) return alert(`Ya existe el personaje con ese id ${id}`);
+  
+          const response = await axios(`https://rym2.up.railway.app/api/character/${id}?key=pi-cand3m`);
+  
+          if (response.data.name) {
+              setCharacters(oldChars => [...oldChars, response.data]);
+          } else {
+              alert('No hay personajes con ese ID');
+          }
+      } catch (error) {
+          console.error(error);
+      }
+  }
 
    const onClose = (id)=> setCharacters(characters.filter(char => char.id !== parseInt(id))) 
 
-   function login(userData){
-      if(userData.email === EMAIL && userData.password === PASSWORD){
-         setAccess(true)
-         navigate('/home')
-      }else alert('el email o la contraseña son incorrectas')
-   }
+   async function login(email, password) {
+      try {
+          const response = await axios.get(`/rickandmorty/login?email=${email}&password=${password}`);
+          
+          if (response.data.access) {
+              
+              console.log('Acceso concedido');
+          } else {
+             
+              console.log('Acceso denegado');
+          }
+      } catch (error) {
+          console.error(error);
+      }
+  }
 
 
    return (
